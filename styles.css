@@ -17,9 +17,10 @@ body {
     padding: 0 20px 40px 20px;
 }
 
-/* the menu at the top of every page */
+/* added a border radius */
 nav {
     background-color: #243B53;
+    border-radius: 12px;
     padding: 14px;
     text-align: center;
 }
@@ -44,10 +45,11 @@ h1 {
     font-size: 40px;
 }
 
+/* changed font size to 20px */
 p {
     max-width: 600px;
     margin: 20px auto;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.5;
 }
 
