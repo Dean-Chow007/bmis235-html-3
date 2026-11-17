@@ -35,7 +35,321 @@
      This box is empty on purpose. In Part 7 you paste an interactive
      graphic BETWEEN the opening <div> and the closing </div> below.
      ===================================================================== -->
-<div class="showcase"></div>
+<div class="showcase">
+  
+<!-- HTML: Creates three interactive national park cards -->
+<div class="showcase">
+  <div class="showcase-header">
+    <div class="showcase-eyebrow">SUMMER ADVENTURES</div>
+    <div class="showcase-title">Three Parks. One Summer.</div>
+    <div class="showcase-subtitle">
+      Explore three of the most beautiful national parks in America.
+      Click a park to discover a fun fact!
+    </div>
+  </div>
+
+  <div class="showcase-grid">
+
+    <!-- Grand Teton -->
+    <button class="showcase-card" type="button" data-park="tetons"
+      aria-label="Discover a fun fact about Grand Teton National Park">
+      <div class="showcase-picture">
+        <svg viewBox="0 0 400 220" role="img" aria-label="Illustration of the Grand Teton mountains">
+          <rect width="400" height="220" fill="#BBD2DF"/>
+          <circle cx="315" cy="45" r="25" fill="#F3D99D"/>
+          <path d="M0 175 L95 55 L140 115 L225 15 L350 165 L400 115 L400 220 L0 220Z" fill="#526E82"/>
+          <path d="M95 55 L115 105 L140 115 L125 87 L145 110 L155 130 L140 115Z" fill="#F4F1E9"/>
+          <path d="M225 15 L190 92 L215 77 L225 95 L245 70 L270 110 L255 65 L350 165Z" fill="#E8EDF0"/>
+          <path d="M0 175 L100 135 L165 175 L260 120 L400 180 L400 220 L0 220Z" fill="#788F78"/>
+          <path d="M0 195 Q100 165 200 195 T400 190 L400 220 L0 220Z" fill="#344F48"/>
+          <path d="M0 207 Q100 195 200 208 T400 203" fill="none" stroke="#D6A85F" stroke-width="3"/>
+        </svg>
+      </div>
+      <div class="showcase-card-info">
+        <div class="showcase-number">01 / WYOMING</div>
+        <div class="showcase-name">Grand Tetons</div>
+        <div class="showcase-hint">Click to discover <span>↗</span></div>
+      </div>
+    </button>
+
+    <!-- North Cascades -->
+    <button class="showcase-card" type="button" data-park="cascades"
+      aria-label="Discover a fun fact about North Cascades National Park">
+      <div class="showcase-picture">
+        <svg viewBox="0 0 400 220" role="img" aria-label="Illustration of the North Cascades mountains">
+          <rect width="400" height="220" fill="#A9C9D5"/>
+          <circle cx="75" cy="45" r="22" fill="#F3D99D"/>
+          <path d="M0 175 L80 65 L145 145 L225 25 L330 145 L385 75 L400 110 L400 220 L0 220Z" fill="#405D6A"/>
+          <path d="M80 65 L58 110 L78 100 L95 118 L110 95 L125 130 L145 145 L115 108 L95 88Z" fill="#EAF0EE"/>
+          <path d="M225 25 L195 90 L220 77 L235 91 L255 68 L278 115 L260 76 L330 145Z" fill="#F3F3EC"/>
+          <path d="M0 175 L100 130 L170 180 L270 125 L400 175 L400 220 L0 220Z" fill="#547A70"/>
+          <path d="M0 195 Q90 175 180 200 T400 190 L400 220 L0 220Z" fill="#244E45"/>
+          <path d="M0 205 Q90 194 180 208 T400 200" fill="none" stroke="#B9D8DA" stroke-width="7"/>
+          <path d="M25 220 L45 180 L65 220 M330 220 L350 165 L375 220" fill="#253F38"/>
+        </svg>
+      </div>
+      <div class="showcase-card-info">
+        <div class="showcase-number">02 / WASHINGTON</div>
+        <div class="showcase-name">North Cascades</div>
+        <div class="showcase-hint">Click to discover <span>↗</span></div>
+      </div>
+    </button>
+
+    <!-- Yosemite -->
+    <button class="showcase-card" type="button" data-park="yosemite"
+      aria-label="Discover a fun fact about Yosemite National Park">
+      <div class="showcase-picture">
+        <svg viewBox="0 0 400 220" role="img" aria-label="Illustration of Yosemite Valley">
+          <rect width="400" height="220" fill="#C7D9E0"/>
+          <circle cx="300" cy="45" r="25" fill="#F1D29A"/>
+          <path d="M0 220 L0 100 L55 75 L105 120 L145 30 L190 110 L235 85 L290 20 L350 95 L400 65 L400 220Z" fill="#687E88"/>
+          <path d="M145 30 L130 95 L145 83 L165 105 L180 115 L160 75Z" fill="#E8E7DD"/>
+          <path d="M290 20 L270 85 L290 70 L310 95 L330 115 L315 60Z" fill="#F1F0E8"/>
+          <path d="M0 175 L75 155 L130 180 L200 145 L275 180 L350 145 L400 175 L400 220 L0 220Z" fill="#56785D"/>
+          <path d="M195 112 L205 170 L213 170 L207 112Z" fill="#DDEDF0"/>
+          <path d="M0 205 Q100 185 200 205 T400 200 L400 220 L0 220Z" fill="#345D4A"/>
+          <path d="M25 220 L45 165 L65 220 M330 220 L350 155 L375 220" fill="#294738"/>
+          <path d="M0 195 Q100 185 200 197 T400 192" fill="none" stroke="#B9D8DA" stroke-width="3"/>
+        </svg>
+      </div>
+      <div class="showcase-card-info">
+        <div class="showcase-number">03 / CALIFORNIA</div>
+        <div class="showcase-name">Yosemite</div>
+        <div class="showcase-hint">Click to discover <span>↗</span></div>
+      </div>
+    </button>
+
+  </div>
+
+  <!-- Fun fact display -->
+  <div class="showcase-fact" aria-live="polite">
+    <div class="showcase-fact-label">DID YOU KNOW?</div>
+    <div class="showcase-fact-text">
+      Select a national park above to reveal a surprising fact!
+    </div>
+  </div>
+</div>
+
+<style>
+/* CSS: Styles the graphic using your navy and gold brand colors */
+
+.showcase {
+  font-family: Montserrat, Arial, sans-serif;
+  color: #243B53;
+  max-width: 1050px;
+  margin: 20px auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.showcase * {
+  box-sizing: border-box;
+}
+
+.showcase-header {
+  margin-bottom: 20px;
+}
+
+.showcase-eyebrow {
+  color: #B58A45;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+}
+
+.showcase-title {
+  font-size: clamp(23px, 4vw, 34px);
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.showcase-subtitle {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #64748B;
+  max-width: 550px;
+}
+
+.showcase-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 15px;
+}
+
+.showcase-card {
+  border: 1px solid #DCE3E9;
+  border-radius: 13px;
+  overflow: hidden;
+  padding: 0;
+  background: #FFFFFF;
+  color: #243B53;
+  text-align: left;
+  cursor: pointer;
+  font: inherit;
+  transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+}
+
+.showcase-card:hover {
+  transform: translateY(-4px);
+  border-color: #D6A85F;
+  box-shadow: 0 7px 18px rgba(36, 59, 83, 0.12);
+}
+
+.showcase-card:focus-visible {
+  outline: 3px solid #D6A85F;
+  outline-offset: 3px;
+}
+
+.showcase-card.showcase-active {
+  border: 2px solid #D6A85F;
+}
+
+.showcase-picture {
+  width: 100%;
+  height: 145px;
+  overflow: hidden;
+}
+
+.showcase-picture svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s;
+}
+
+.showcase-card:hover .showcase-picture svg {
+  transform: scale(1.04);
+}
+
+.showcase-card-info {
+  padding: 13px;
+}
+
+.showcase-number {
+  color: #B58A45;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1.3px;
+  margin-bottom: 6px;
+}
+
+.showcase-name {
+  font-size: 16px;
+  font-weight: 800;
+  margin-bottom: 9px;
+}
+
+.showcase-hint {
+  font-size: 11px;
+  color: #64748B;
+}
+
+.showcase-hint span {
+  color: #B58A45;
+  font-weight: bold;
+}
+
+.showcase-fact {
+  margin-top: 16px;
+  padding: 15px 18px;
+  background: #243B53;
+  border-left: 4px solid #D6A85F;
+  border-radius: 9px;
+  color: white;
+  min-height: 75px;
+}
+
+.showcase-fact-label {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  color: #D6A85F;
+  margin-bottom: 7px;
+}
+
+.showcase-fact-text {
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 600px) {
+  .showcase {
+    padding: 12px;
+  }
+
+  .showcase-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .showcase-card {
+    display: flex;
+    align-items: center;
+    min-height: 95px;
+  }
+
+  .showcase-picture {
+    width: 40%;
+    height: 100px;
+    flex-shrink: 0;
+  }
+
+  .showcase-card-info {
+    padding: 10px 13px;
+  }
+
+  .showcase-name {
+    font-size: 14px;
+  }
+
+  .showcase-hint {
+    font-size: 10px;
+  }
+
+  .showcase-fact {
+    margin-top: 12px;
+  }
+}
+</style>
+
+<script>
+/* JavaScript: Makes each park clickable and displays its fun fact */
+
+(function () {
+  const showcase = document.currentScript.parentElement.querySelector('.showcase')
+    || document.querySelector('.showcase:last-of-type');
+
+  if (!showcase) return;
+
+  const facts = {
+    tetons: "The Teton Range is unusual because it rises dramatically from the valley floor with almost no foothills. Grand Teton itself towers approximately 7,000 feet above the valley!",
+    cascades: "North Cascades National Park contains more than 300 glaciers, making it one of the most heavily glaciated areas in the contiguous United States!",
+    yosemite: "In 1864, President Abraham Lincoln signed the Yosemite Grant, protecting Yosemite Valley and the Mariposa Grove. It was a major milestone in the history of America's national parks!"
+  };
+
+  const cards = showcase.querySelectorAll('.showcase-card');
+  const factText = showcase.querySelector('.showcase-fact-text');
+
+  cards.forEach(function (card) {
+    card.addEventListener('click', function () {
+      cards.forEach(function (item) {
+        item.classList.remove('showcase-active');
+        item.setAttribute('aria-pressed', 'false');
+      });
+
+      card.classList.add('showcase-active');
+      card.setAttribute('aria-pressed', 'true');
+
+      const park = card.getAttribute('data-park');
+      factText.textContent = facts[park];
+    });
+  });
+})();
+</script>
+
+</div>
 
 <!-- Footer: fill in your name -->
 <footer>Built by Dean Chow &middot; BMIS 235; <a href="mailto:dchow@zagmail.gonzaga.edu">Email me</a></footer>
